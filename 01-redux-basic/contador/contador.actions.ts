@@ -18,3 +18,7 @@ export const dividirAction: Action = {
     type: "Dividir",
     payload: 2
 };
+
+export const resetAction: Action = {
+    type: "Reset"
+};

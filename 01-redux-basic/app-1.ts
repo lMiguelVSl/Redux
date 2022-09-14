@@ -17,6 +17,9 @@ function reducer(state = 10, action : Action) {
         case 'Dividir' :
         return state / action.payload;
 
+        case 'Reset' :
+        return state = 0;
+
         default:
             return state;
     }
@@ -26,3 +29,4 @@ console.log( reducer(20, Actions.incrementarAction));
 console.log( reducer(20, Actions.decrementarAction));
 console.log( reducer(20, Actions.multiplicarAction));
 console.log( reducer(20, Actions.dividirAction));
+console.log( reducer(20, Actions.resetAction));
